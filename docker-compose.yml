@@ -1,0 +1,64 @@
+version: '2.0'
+services:
+ 
+  #PHP Service
+  aulinha_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cloudsigma.com/php
+    container_name: aulinha_app
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: aulinha_app
+      SERVICE_TAGS: dev
+    working_dir: /var/www/html/
+    volumes:
+      - ./:/var/www/html/
+      - ./php/laravel.ini:/usr/local/etc/php/conf.d/laravel.ini
+    networks:
+      - site-aulinha-network
+ 
+  #Nginx Service
+  aulinha_webserver:
+    image: nginx:alpine
+    container_name: aulinha_webserver
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html/
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - site-aulinha-network
+ 
+  #MySQL Service
+  aulinha_db:
+    image: mysql:8.0
+    container_name: aulinha_db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: aulinhaonline
+      MYSQL_ROOT_PASSWORD: aulinha123
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - dbdata:/var/lib/mysql/
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - site-aulinha-network
+ 
+#Docker Networks
+networks:
+  site-aulinha-network:
+    driver: bridge
+#Volumes
+volumes:
+  dbdata:
+    driver: local
