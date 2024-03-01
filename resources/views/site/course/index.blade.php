@@ -36,8 +36,8 @@
                   <p class="price">$35</p>
                 </div>
 
-                <h3><a href="course-details.html">Violão</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a>Violão</a></h3>
+                <p>Aprenda a tocar violão usando partituras e cifras, usando escalas de notas e acordes de várias formas.</p>
               </div>
             </div>
           </div> <!-- End Course Item-->
@@ -51,8 +51,8 @@
                   <p class="price">$35</p>
                 </div>
 
-                <h3><a href="course-details.html">Violino</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a>Violino</a></h3>
+                <p>Vamos tocar violino através das partituras e aprender de uma forma divertida com escalas e notas para tocar as melhores músicas clássicas!</p>
               </div>
             </div>
           </div> <!-- End Course Item-->
@@ -66,8 +66,8 @@
                   <p class="price">$35</p>
                 </div>
 
-                <h3><a href="course-details.html">Bateria</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a>Bateria</a></h3>
+                <p>É o instrumento mais legal mesmo, então vamos aprender com partituras e tocar varios ritmos em todos os tempos possíveis.</p>
               </div>
             </div>
           </div> <!-- End Course Item-->
@@ -84,8 +84,8 @@
                   <p class="price">$35</p>
                 </div>
 
-                <h3><a href="course-details.html">Baixo</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a>Baixo</a></h3>
+                <p>O que seria das bandas sem o baixo? Um instrumento versátil e facil de aprender, ideal pra quem esta começando ou ja sabe violão.</p>
               </div>
             </div>
           </div> <!-- End Course Item-->
@@ -99,8 +99,8 @@
                   <p class="price">$35</p>
                 </div>
 
-                <h3><a href="course-details.html">Teclado</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <h3><a>Teclado</a></h3>
+                <p>Com tantas notas, o teclado é o instrumento ideal para tocar qualquer música, e fazer a harmonia da música ficar ainda mais bonita.</p>
               </div>
             </div>
           </div> <!-- End Course Item-->

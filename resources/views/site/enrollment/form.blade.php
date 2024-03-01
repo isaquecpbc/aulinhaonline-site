@@ -59,23 +59,23 @@
             <div class="px-3 mb-1">
                 <div class="form-check">
                     {!! Form::radio('course', 'guitar', false, ['id' => 'guitar', 'class' => 'form-check-input']) !!}
-                    {!! Form::label('guitar', 'Violão', ['class' => 'form-check-label']) !!}
+                    {!! Form::label('guitar', 'Violão (vaga 19hrs/20:30hrs)', ['class' => 'form-check-label']) !!}
                 </div>
                 <div class="form-check">
                     {!! Form::radio('course', 'violin', false, ['id' => 'violin', 'class' => 'form-check-input']) !!}
-                    {!! Form::label('violin', 'Violino', ['class' => 'form-check-label']) !!}
+                    {!! Form::label('violin', 'Violino (vaga 19hrs/20:30hrs)', ['class' => 'form-check-label']) !!}
                 </div>
                 <div class="form-check">
                     {!! Form::radio('course', 'drums', false, ['id' => 'drums', 'class' => 'form-check-input']) !!}
-                    {!! Form::label('drums', 'Bateria', ['class' => 'form-check-label']) !!}
+                    {!! Form::label('drums', 'Bateria (vaga 19hrs/20:30hrs)', ['class' => 'form-check-label']) !!}
                 </div>
                 <div class="form-check">
                     {!! Form::radio('course', 'keyboard', false, ['id' => 'keyboard', 'class' => 'form-check-input']) !!}
-                    {!! Form::label('keyboard', 'Teclado', ['class' => 'form-check-label']) !!}
+                    {!! Form::label('keyboard', 'Teclado (vaga 19hrs/20:30hrs)', ['class' => 'form-check-label']) !!}
                 </div>
                 <div class="form-check">
                     {!! Form::radio('course', 'bass', false, ['id' => 'bass', 'class' => 'form-check-input']) !!}
-                    {!! Form::label('bass', 'Baixo', ['class' => 'form-check-label']) !!}
+                    {!! Form::label('bass', 'Baixo (vaga 19hrs/20:30hrs)', ['class' => 'form-check-label']) !!}
                 </div>
             </div>
         </div>
