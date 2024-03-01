@@ -16,9 +16,39 @@ class SiteController extends Controller
         //titulo na Aba da página
         $title_page = 'Início';
         //
-        $active = 'products';
+        $active = 'home';
         
         return view('site.index', compact('title_page', 'active'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function about()
+    {
+        //titulo na Aba da página
+        $title_page = 'Sobre';
+        //
+        $active = 'about';
+        
+        return view('site.about', compact('title_page', 'active'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function contact()
+    {
+        //titulo na Aba da página
+        $title_page = 'Contato';
+        //
+        $active = 'contact';
+        
+        return view('site.contact', compact('title_page', 'active'));
     }
 
     /**

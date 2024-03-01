@@ -49,7 +49,7 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - dbdata:/var/lib/mysql/
+      - aulinha_dbdata:/var/lib/mysql/
       - ./mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - site-aulinha-network
@@ -60,5 +60,5 @@ networks:
     driver: bridge
 #Volumes
 volumes:
-  dbdata:
+  aulinha_dbdata:
     driver: local

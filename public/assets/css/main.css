@@ -1,0 +1,48 @@
+/**
+* Autor: Isaque Palmieri
+*/
+
+/*--------------------------------------------------------------
+# styles gerais
+--------------------------------------------------------------*/
+::placeholder {
+    color: #9b9b9b!important;
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #9b9b9b!important;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.confirmation-checklist ul {
+}
+.confirmation-checklist ul li {
+    list-style: none;
+}
+.confirmation-checklist ul li:hover, 
+.confirmation-checklist ul li:focus {
+    color: #0665AF;
+}
+.confirmation-checklist ul li i {
+    color: #A8CF45;
+}
+
+.alert {
+    height: 50px;
+}
+.alert .bi{
+    width: 15px;
+}
+
+.btn-w-fluid {
+    width: fit-content;
+    margin: auto;
+}
+
+.breadcrumbs a {
+    color: #0665AF;
+}

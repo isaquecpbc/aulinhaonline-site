@@ -6,44 +6,42 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Mentor</h3>
+            <h3>Aulinha</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+                R. Benjamin Constant, 2080<br>
+                Escola Agrícola, 89037-501<br>
+                Blumenau - SC <br><br>
+                <strong>Telefone:</strong> <a href="tel:+5547991506381"></a> +55 47 99150 6381<br>
+                <strong>E-mail:</strong> contato@aulinhaonline.com<br>
             </p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Links Úteis</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a href="{{route('home')}}">Início</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a href="{{route('about')}}">Sobre</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a href="{{route('courses')}}">Cursos</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}">Contato</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a href="https://www.instagram.com/institutovidablumenau/" target="_blank">Instituto Vida</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Aulinhas oferecidas</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a>Violão</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a>Violino</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a>Bateria</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a>Baixo</a></li>
+              <li class="m-0 py-1"><i class="bx bx-chevron-right"></i> <a>Teclado</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <h4>Centro de atendimento social Instituto Vida</h4>
+                Uma rede de apoio para uma vida digna<br>
+                O Instituto Vida é uma instituição social cristã que desenvolve vários projetos sociais conectando voluntários com a comunidade de Blumenau. Nossa missão é o florescimento da justiça social, a dignidade e a cidadania na vida de pessoas. </p>
           </div>
 
         </div>
@@ -54,18 +52,16 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>2024</span></strong>. Todos os direitosreservados
+          &copy; Copyright <strong><span>2024</span></strong>. Todos os direitos reservados
         </div>
         <div class="credits">
-          Designed by <a href="https://www.linkedin.com/in/isaque-palmieri-desenvolvedor/">Isaque Palmieri</a>
+          Designed by <a href="https://www.linkedin.com/in/isaque-palmieri-desenvolvedor/" target="_blank">Isaque Palmieri</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5547991506381&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20aulinha%20de%20musica" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://www.instagram.com/institutovidablumenau/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/institutovidablumenau/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->

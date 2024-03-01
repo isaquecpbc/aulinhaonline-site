@@ -9,4 +9,5 @@
 
     <!-- Template Main CSS File -->
     <link href="{{URL::asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('assets/css/main.css')}}" rel="stylesheet">
     @stack('styles')

@@ -17,27 +17,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     @include('templates.aulinha.inc.stylesheets')
 </head>
 
 <body>
     <!-- header area -->
     @include('templates.aulinha.inc.header')
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex justify-content-center align-items-center">
-        <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Learning Today,<br>Leading Tomorrow</h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <a href="courses.html" class="btn-get-started">Get Started</a>
-        </div>
-    </section><!-- End Hero -->
-
+    
+    <!-- main area -->
     <main id="main">
         @yield('content')
     </main>
-
+    
+    <!-- footer area -->
     @include('templates.aulinha.inc.footer')
 
     <div id="preloader"></div>

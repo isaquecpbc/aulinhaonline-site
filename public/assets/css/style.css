@@ -1,21 +1,18 @@
 /**
 * Template Name: Mentor
 * Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #444444;
 }
 
 a {
-  color: #5fcf80;
+  color: #A8CF45;
   text-decoration: none;
 }
 
@@ -30,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -43,10 +40,10 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5fcf80;
+  background: #A8CF45;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: all 0.4s;
 }
 
@@ -85,7 +82,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5fcf80;
+  border: 6px solid #A8CF45;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -125,18 +122,27 @@ h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 28px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #header .logo a {
-  color: #5fcf80;
+  color: #A8CF45;
+}
+
+#header .logo a span {
+  color: #0665AF;
+  background-color: #A8CF45;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 15px;
 }
 
 #header .logo img {
@@ -148,9 +154,9 @@ h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  background: #5fcf80;
+  background: #A8CF45;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -159,8 +165,8 @@ h6 {
 }
 
 .get-started-btn:hover {
-  background: #3ac162;
-  color: #fff;
+  background: #0665AF;
+  color: #A8CF45;
 }
 
 @media (max-width: 768px) {
@@ -192,18 +198,21 @@ h6 {
   position: relative;
 }
 
-.navbar a,
-.navbar a:focus {
+.navbar li a,
+.navbar li a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  padding: 10px 20px;
+  margin: 0 0 0 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
   font-weight: 500;
   color: #37423b;
   white-space: nowrap;
   transition: 0.3s;
+  border: 1px solid #ffffff00;
 }
 
 .navbar a i,
@@ -213,12 +222,15 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
+.navbar li a:hover,
+.navbar .active a,
+.navbar .active:focus a,
 .navbar li:hover>a {
-  color: #5fcf80;
+  color: #0665AF;
+  border: 1px solid #A8CF45;
+  border-radius: 5px;
 }
+.navbar .active a { font-weight: bold; }
 
 .navbar .dropdown ul {
   display: block;
@@ -252,9 +264,9 @@ h6 {
 }
 
 .navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul .active:hover a,
 .navbar .dropdown ul li:hover>a {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .navbar .dropdown:hover>ul {
@@ -352,9 +364,9 @@ h6 {
 }
 
 .navbar-mobile a:hover,
-.navbar-mobile .active,
+.navbar-mobile .active a,
 .navbar-mobile li:hover>a {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .navbar-mobile .getstarted,
@@ -389,7 +401,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -402,14 +414,14 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/slide-site.png") center -5vw;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -423,7 +435,8 @@ h6 {
 
 @media (max-width: 992px) {
   #hero .container {
-    padding-top: 62px;
+    padding: 10vw;
+    padding-top: 35vh;
   }
 }
 
@@ -433,7 +446,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #hero h2 {
@@ -442,23 +455,29 @@ h6 {
   font-size: 24px;
 }
 
+#hero h2 span {
+  color: #A8CF45;
+  font-size: 22px;
+}
+
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 35px;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: 0.5s;
   margin-top: 30px;
-  border: 2px solid #fff;
+  border: 2px solid #A8CF45;
   color: #fff;
 }
 
 #hero .btn-get-started:hover {
-  background: #5fcf80;
-  border: 2px solid #5fcf80;
+  background: #A8CF45;
+  color: #0665AF;
+  border: 2px solid #A8CF45;
 }
 
 @media (min-width: 1024px) {
@@ -470,6 +489,8 @@ h6 {
 @media (max-width: 768px) {
   #hero {
     height: 100vh;
+    background: url(../img/slide-cel-site.png) center;
+    background-size: cover;
   }
 
   #hero h1 {
@@ -508,7 +529,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 .section-title h2::after {
@@ -526,14 +547,14 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #37423b;
 }
 
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
+  background: #A8CF45;
   padding: 30px 0;
   color: #fff;
 }
@@ -574,13 +595,13 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .about .content .learn-more-btn {
-  background: #5fcf80;
+  background: #A8CF45;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 8px 25px 9px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -589,7 +610,7 @@ section {
 }
 
 .about .content .learn-more-btn:hover {
-  background: #3ac162;
+  background: #0665AF;
   color: #fff;
 }
 
@@ -610,14 +631,14 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #5fcf80;
+  color: #A8CF45;
   font-weight: 700;
 }
 
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #37423b;
@@ -628,7 +649,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: #5fcf80;
+  background: #A8CF45;
   border-radius: 4px;
   color: #fff;
 }
@@ -648,7 +669,7 @@ section {
   background: rgba(255, 255, 255, 0.2);
   padding: 6px 30px 8px 30px;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: all ease-in-out 0.4s;
 }
 
@@ -657,7 +678,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #5fcf80;
+  color: #A8CF45;
   background: #fff;
 }
 
@@ -672,10 +693,10 @@ section {
 .why-us .icon-boxes .icon-box i {
   font-size: 32px;
   padding: 18px;
-  color: #5fcf80;
+  color: #A8CF45;
   margin-bottom: 30px;
   background: #ecf9f0;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .why-us .icon-boxes .icon-box h4 {
@@ -724,11 +745,11 @@ section {
 }
 
 .features .icon-box:hover {
-  border-color: #5fcf80;
+  border-color: #A8CF45;
 }
 
 .features .icon-box:hover h3 a {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 /*--------------------------------------------------------------
@@ -745,7 +766,7 @@ section {
 
 .courses .course-content h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .courses .course-content h3 a {
@@ -754,7 +775,7 @@ section {
 }
 
 .courses .course-content h3 a:hover {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .courses .course-content p {
@@ -763,11 +784,15 @@ section {
 }
 
 .courses .course-content h4 {
-  font-size: 14px;
-  background: #5fcf80;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 12px;
+  background: #A8CF45;
   padding: 7px 14px;
-  color: #fff;
+  color: #0665AF;
+  font-weight: bold;
+  text-transform: uppercase;
   margin: 0;
+  border-radius: 5px;
 }
 
 .courses .course-content .price {
@@ -775,6 +800,7 @@ section {
   font-weight: 700;
   font-size: 18px;
   color: #37423b;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 .courses .trainer {
@@ -784,7 +810,7 @@ section {
 
 .courses .trainer .trainer-profile img {
   max-width: 50px;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .courses .trainer .trainer-profile span {
@@ -846,7 +872,7 @@ section {
 }
 
 .trainers .member .social a:hover {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .trainers .member .social i {
@@ -931,11 +957,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5fcf80;
+  border: 1px solid #A8CF45;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5fcf80;
+  background-color: #A8CF45;
 }
 
 @media (max-width: 767px) {
@@ -987,7 +1013,7 @@ section {
   display: block;
   width: 60px;
   height: 1px;
-  background: #5fcf80;
+  background: #A8CF45;
   bottom: 0;
   left: 0;
 }
@@ -1002,7 +1028,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .course-details .course-info p {
@@ -1038,12 +1064,12 @@ section {
 }
 
 .cource-details-tabs .nav-link:hover {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .cource-details-tabs .nav-link.active {
-  color: #5fcf80;
-  border-color: #5fcf80;
+  color: #A8CF45;
+  border-color: #A8CF45;
 }
 
 .cource-details-tabs .tab-pane.active {
@@ -1073,7 +1099,7 @@ section {
 
   .cource-details-tabs .nav-link.active {
     color: #fff;
-    background: #5fcf80;
+    background: #A8CF45;
   }
 }
 
@@ -1134,7 +1160,7 @@ section {
 }
 
 .events .read-more a:hover {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 .events .card:hover img {
@@ -1142,11 +1168,11 @@ section {
 }
 
 .events .card:hover .card-body {
-  border-color: #5fcf80;
+  border-color: #A8CF45;
 }
 
 .events .card:hover .card-body .card-title a {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 /*--------------------------------------------------------------
@@ -1174,9 +1200,9 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #5fcf80;
+  color: #A8CF45;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1206,7 +1232,7 @@ section {
 }
 
 .pricing ul i {
-  color: #5fcf80;
+  color: #A8CF45;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1224,26 +1250,27 @@ section {
 }
 
 .pricing .btn-buy {
-  background: #5fcf80;
+  background: #A8CF45;
   display: inline-block;
   padding: 8px 35px;
-  border-radius: 50px;
-  color: #fff;
+  border-radius: 5px;
+  color: #0665AF;
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .pricing .btn-buy:hover {
-  background: #3ac162;
+  background: #0665AF;
+  background: #A8CF45;
 }
 
 .pricing .featured h3 {
-  color: #fff;
-  background: #5fcf80;
+  color: #0665AF;
+  background: #A8CF45;
 }
 
 .pricing .advanced {
@@ -1255,7 +1282,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #5fcf80;
+  background: #A8CF45;
   color: #fff;
 }
 
@@ -1273,7 +1300,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #5fcf80;
+  color: #A8CF45;
   float: left;
   width: 44px;
   height: 44px;
@@ -1281,7 +1308,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1300,15 +1327,10 @@ section {
   color: #657a6d;
 }
 
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #5fcf80;
+  background: #A8CF45;
   color: #fff;
 }
 
@@ -1371,7 +1393,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #5fcf80;
+  border-color: #A8CF45;
 }
 
 .contact .php-email-form input {
@@ -1383,16 +1405,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #5fcf80;
+  background: #A8CF45;
   border: 0;
   padding: 10px 35px;
-  color: #fff;
+  color: #0665AF;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #3ac162;
+  background: #0665AF;
 }
 
 @keyframes animate-loading {
@@ -1435,7 +1457,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #777777;
 }
 
@@ -1459,7 +1481,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #5fcf80;
+  color: #A8CF45;
   font-size: 18px;
   line-height: 1;
 }
@@ -1483,7 +1505,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 #footer .footer-newsletter {
@@ -1503,7 +1525,7 @@ section {
   background: #fff;
   padding: 6px 10px;
   position: relative;
-  border-radius: 50px;
+  border-radius: 5px;
   text-align: left;
   border: 1px solid #e0e5e2;
 }
@@ -1523,15 +1545,15 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #5fcf80;
-  color: #fff;
+  background: #A8CF45;
+  color: #0665AF;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #3ac162;
+  background: #0665AF;
 }
 
 #footer .credits {
@@ -1540,18 +1562,18 @@ section {
 }
 
 #footer .credits a {
-  color: #3ac162;
+  color: #0665AF;
   transition: 0.3s;
 }
 
 #footer .credits a:hover {
-  color: #5fcf80;
+  color: #A8CF45;
 }
 
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5fcf80;
+  background: #A8CF45;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1564,7 +1586,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #3ac162;
-  color: #fff;
+  background: #A8CF45;
+  color: #0665AF;
   text-decoration: none;
 }
