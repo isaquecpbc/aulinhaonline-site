@@ -4,6 +4,7 @@
 @endpush
 
 @push('scripts')
+
 @endpush
 
 @section('content')
@@ -82,19 +83,19 @@
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('name', 'Aluno(a) (nome completo)', ['class' => 'form-label']) !!}
-                {!! Form::text('name', null, ['id' => 'name', 'class' => 'form-control', 'placeholder' => 'Examplonildo da Silva', 'aria-label' => 'name']) !!}
+                {!! Form::text('name', null, ['id' => 'name', 'class' => 'form-control', 'placeholder' => 'Examplonildo da Silva', 'aria-label' => 'name', 'maxlength' => '150']) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('phone', 'Telefone de contato', ['class' => 'form-label']) !!}
-                {!! Form::text('phone', null, ['id' => 'phone', 'class' => 'form-control', 'placeholder' => '(47) 98765-4321', 'aria-label' => 'phone']) !!}
+                {!! Form::text('phone', null, ['id' => 'phone', 'class' => 'form-control', 'placeholder' => '(47) 98765-4321', 'aria-label' => 'phone', 'data-mask' => '(00) 00000-0000', 'data-mask-maxlength' => 'true', 'maxlength' => '16']) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('email', 'E-mail', ['class' => 'form-label']) !!}
-                {!! Form::text('email', null, ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'name@example.com', 'aria-label' => 'email']) !!}
+                {!! Form::text('email', null, ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'name@example.com', 'aria-label' => 'email', 'maxlength' => '50']) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
@@ -123,31 +124,31 @@
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('rg', 'RG', ['class' => 'form-label']) !!}
-                {!! Form::text('rg', null, ['id' => 'rg', 'class' => 'form-control', 'placeholder' => '1.222.333', 'aria-label' => 'rg']) !!}
+                {!! Form::text('rg', null, ['id' => 'rg', 'class' => 'form-control', 'placeholder' => '1.222.333', 'aria-label' => 'rg', 'maxlength' => '20']) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('cpf', 'CPF', ['class' => 'form-label']) !!}
-                {!! Form::text('cpf', null, ['id' => 'cpf', 'class' => 'form-control', 'placeholder' => '111.222.333-44', 'aria-label' => 'cpf']) !!}
+                {!! Form::text('cpf', null, ['id' => 'cpf', 'class' => 'form-control', 'placeholder' => '111.222.333-44', 'aria-label' => 'cpf', 'data-mask' => '000.000.000-00', 'data-mask-reverse' => 'true', 'data-mask-maxlength' => 'true', 'maxlength' => '15' ]) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('address', 'Endereço: Rua, Número e Complemento', ['class' => 'form-label']) !!}
-                {!! Form::text('address', null, ['id' => 'address', 'class' => 'form-control', 'placeholder' => 'Rua Talnilda, N 55 APT 101', 'aria-label' => 'address']) !!}
+                {!! Form::text('address', null, ['id' => 'address', 'class' => 'form-control', 'placeholder' => 'Rua Talnilda, N 55 APT 101', 'aria-label' => 'address', 'maxlength' => '150']) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('neighborhood', 'Bairro', ['class' => 'form-label']) !!}
-                {!! Form::text('neighborhood', null, ['id' => 'neighborhood', 'class' => 'form-control', 'placeholder' => 'Centro', 'aria-label' => 'neighborhood']) !!}
+                {!! Form::text('neighborhood', null, ['id' => 'neighborhood', 'class' => 'form-control', 'placeholder' => 'Centro', 'aria-label' => 'neighborhood', 'maxlength' => '50']) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
                 {!! Form::label('state', 'Cidade e Estado', ['class' => 'form-label']) !!}
-                {!! Form::text('state', null, ['id' => 'state', 'class' => 'form-control', 'placeholder' => 'Exemplonau - EX', 'aria-label' => 'state']) !!}
+                {!! Form::text('state', null, ['id' => 'state', 'class' => 'form-control', 'placeholder' => 'Exemplonau - EX', 'aria-label' => 'state', 'maxlength' => '50']) !!}
             </div>
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
@@ -172,5 +173,8 @@
 
       </div>
     </section><!-- End Enrollment Section -->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 @endsection

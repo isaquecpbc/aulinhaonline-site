@@ -18,6 +18,12 @@
             <li>
         @endif
             <a href="{{route('about')}}">Sobre</a></li>
+        @if ($active == 'donate')
+            <li class="active">
+        @else
+            <li>
+        @endif
+            <a href="{{route('donate')}}">Apoie</a></li>
         @if ($active == 'courses')
             <li class="active">
         @else

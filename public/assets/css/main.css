@@ -46,3 +46,12 @@
 .breadcrumbs a {
     color: #0665AF;
 }
+
+.x-small, small.x-small {
+    font-size: x-small!important;
+}
+
+.counters small.x-small {
+    top: -10px;
+    position: relative;
+}

@@ -41,6 +41,21 @@ class SiteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function donate()
+    {
+        //titulo na Aba da página
+        $title_page = 'Sobre';
+        //
+        $active = 'donate';
+        
+        return view('site.donate', compact('title_page', 'active'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function contact()
     {
         //titulo na Aba da página

@@ -149,6 +149,17 @@ h6 {
   max-height: 40px;
 }
 
+@media (max-width: 991px) {
+  #header .logo {
+    font-size: 22px;
+	font-size: 5vw;
+  }
+  #header .logo a span {
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+}
+
 /**
 * Get Startet Button 
 */

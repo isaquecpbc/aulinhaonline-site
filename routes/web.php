@@ -20,6 +20,7 @@ Route::get('/', [SiteController::class, 'index']);
 // sitemap
 Route::get('/home', [SiteController::class, 'index'])->name('home');
 Route::get('/sobre', [SiteController::class, 'about'])->name('about');
+Route::get('/apoie', [SiteController::class, 'donate'])->name('donate');
 Route::get('/contato', [SiteController::class, 'contact'])->name('contact');
 Route::get('/cursos', [CourseController::class, 'index'])->name('courses');
 Route::get('/inscreva', [EnrollmentController::class, 'index'])->name('enrollment');
