@@ -153,7 +153,7 @@
         </div>
         <div class="row mt-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="mb-3">
-                {!! Form::label('responsible', 'Nome do técnico responsável', ['class' => 'form-label']) !!}
+                {!! Form::label('responsible', 'Nome Completo do Responsável', ['class' => 'form-label']) !!}
                 {!! Form::text('responsible', null, ['id' => 'responsible', 'class' => 'form-control', 'placeholder' => 'Exemplildo da Silva', 'aria-label' => 'responsible']) !!}
             </div>
         </div>
@@ -174,7 +174,7 @@
       </div>
     </section><!-- End Enrollment Section -->
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 @endsection

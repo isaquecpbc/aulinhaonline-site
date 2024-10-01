@@ -13,7 +13,7 @@
         <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
             <h1>Todas segundas-feiras</h1>
             <h2>Cursos com mensalidade simbólica de R$35,00</h2>
-            <h2><span>Inscrições abertas de 01/03 á 10/03</span></h2>
+            <h2><span>Inscrições abertas</span></h2>
             <a href="{{route('courses')}}" class="btn-get-started">Inscrições</a>
         </div>
     </section><!-- End Hero -->
